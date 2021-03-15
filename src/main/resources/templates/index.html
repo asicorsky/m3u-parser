@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <script src="../static/js/popper/popper.min.js" type="text/javascript" th:src="@{/js/popper.min.js}"></script>
+    <script src="../static/js/jquery/jquery.min.js" type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+    <script src="../static/js/bootstrap/bootstrap.min.js" type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script src="../static/js/bootstrap/bootstrap.bundle.min.js" type="text/javascript" th:src="@{/js/bootstrap.bundle.min.js}"></script>
+    <script src="../static/js/application/lazy-data.js" type="text/javascript" th:src="@{/js/lazy-data.js}"></script>
+
+    <link href="../static/css/bootstrap/bootstrap.min.css" rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+    <link href="../static/css/bootstrap/icons/font/bootstrap-icons.css" rel="stylesheet" th:href="@{/css/bootstrap-icons.css}">
+    <link href="../static/css/application/application.css" rel="stylesheet" th:href="@{/css/application.css}">
+</head>
+<body>
+<div>
+    <div th:insert="fragments/header :: header"></div>
+    <div th:insert="fragments/lazy-data :: lazy-data"></div>
+    <div th:insert="fragments/footer :: footer"></div>
+</div>
+</body>
+</html>

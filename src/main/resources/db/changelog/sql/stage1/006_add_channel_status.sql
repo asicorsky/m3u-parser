@@ -1,0 +1,1 @@
+alter table channels add status varchar(31) not null default 'not_validated';
